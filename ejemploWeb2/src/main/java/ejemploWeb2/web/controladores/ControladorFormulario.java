@@ -27,9 +27,7 @@ public class ControladorFormulario {
 	 /**
 	  * ANOTACIONES USADAS:
 	  * formulario_registro.jsp
-	  * - @PostMapping: Nos ahorra el proceso del metodo POST con @RequestMapping.
-	  * - @ModelAttribute sirve para recuperar atributos del @RequestMapping anterior y rellenar la "key" 
-	  *   usuarioVista (que usaremos en la vista formulario_enviado.jsp) con los datos del objeto Usuario.
+	  * - @RequestMapping: Asocia la solicitud con el controlador.
 	  */
 	    @RequestMapping(value="/formulario")  // "/formulario" se refiere a la vista "formulario_registro.jsp"
 	    public String mostrarFormulario (Model modelo) { //Model: Va a poseer los atributos de "modelo"
